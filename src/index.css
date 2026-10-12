@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FAF9F5;
+    color: #1A202C;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Custom scroll behavior and styling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* WhatsApp chat bubble styles */
+.whatsapp-chat-bg {
+  background-color: #ECE5DD;
+  background-image: radial-gradient(#d3c7b8 0.75px, transparent 0.75px);
+  background-size: 14px 14px;
+}
+
+/* Efeito pulsante de alta conversão para botões verdes */
+@keyframes buttonPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 16px rgba(16, 149, 90, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 8px 26px rgba(16, 149, 90, 0.65);
+  }
+}
+
+.btn-pulsing {
+  animation: buttonPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Carrossel infinito contínuo sem interrupções */
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content;
+  animation: infiniteScroll 35s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-pulsing,
+  .animate-infinite-scroll {
+    animation: none;
+  }
+}

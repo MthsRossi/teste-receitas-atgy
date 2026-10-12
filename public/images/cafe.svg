@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A3423"/>
+      <stop offset="50%" stop-color="#3A2718"/>
+      <stop offset="100%" stop-color="#281A0F"/>
+    </linearGradient>
+    <linearGradient id="plateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#EDE7DB"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Mesa de madeira rústica brasileira com veios quentes -->
+  <rect width="800" height="600" fill="url(#bgWood)"/>
+  <line x1="0" y1="120" x2="800" y2="120" stroke="#25160C" stroke-width="3" opacity="0.4"/>
+  <line x1="0" y1="280" x2="800" y2="280" stroke="#25160C" stroke-width="3" opacity="0.4"/>
+  <line x1="0" y1="440" x2="800" y2="440" stroke="#25160C" stroke-width="3" opacity="0.4"/>
+
+  <!-- Toalha de linho rústica / pano de prato terracota -->
+  <path d="M 40 40 L 460 30 L 410 570 L 30 550 Z" fill="#A85A2E" opacity="0.85" filter="url(#shadow)"/>
+  <path d="M 50 50 L 450 40 L 400 560 L 40 540 Z" fill="#F7F3EC" opacity="0.92"/>
+
+  <!-- Prato principal de cerâmica artesanal -->
+  <circle cx="250" cy="300" r="170" fill="url(#plateGrad)" stroke="#C9C2B2" stroke-width="3" filter="url(#shadow)"/>
+  <circle cx="250" cy="300" r="140" fill="#FAF6EE"/>
+
+  <!-- Ovos mexidos cremosos com ervas frescas -->
+  <path d="M 170 270 Q 210 230 260 250 Q 310 270 290 330 Q 230 360 170 320 Z" fill="#F59E0B" opacity="0.95"/>
+  <path d="M 190 280 Q 230 250 270 270 Q 280 320 230 340 Q 180 330 190 280 Z" fill="#FBBF24"/>
+  <!-- Salpicado de cheiro-verde / salsa -->
+  <circle cx="210" cy="275" r="3" fill="#4A5334"/>
+  <circle cx="245" cy="265" r="4" fill="#4A5334"/>
+  <circle cx="230" cy="300" r="3" fill="#4A5334"/>
+  <circle cx="265" cy="310" r="3.5" fill="#4A5334"/>
+  <circle cx="215" cy="315" r="4" fill="#4A5334"/>
+
+  <!-- Fatias de queijo minas frescal grelhado -->
+  <rect x="250" y="210" width="70" height="40" rx="6" fill="#FDFBF7" stroke="#E5DECE" stroke-width="1.5" transform="rotate(15 285 230)"/>
+  <line x1="260" y1="225" x2="310" y2="235" stroke="#C8913A" stroke-width="3" stroke-linecap="round"/>
+  <line x1="265" y1="235" x2="305" y2="245" stroke="#C8913A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Fatias de abacate fresco com azeite -->
+  <path d="M 140 320 C 120 370 170 410 210 400 C 190 370 180 340 140 320 Z" fill="#65A30D"/>
+  <path d="M 155 335 C 140 365 175 395 195 385 C 180 365 175 350 155 335 Z" fill="#84CC16"/>
+
+  <!-- Pãozinho de queijo de tapioca / sementes -->
+  <circle cx="310" cy="350" r="28" fill="#FDE68A" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="305" cy="345" r="8" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="320" cy="355" r="5" fill="#B45309" opacity="0.7"/>
+
+  <!-- Xícara rústica de café coado fumegante -->
+  <circle cx="600" cy="220" r="85" fill="#F7F3EC" stroke="#C9C2B2" stroke-width="3" filter="url(#shadow)"/>
+  <circle cx="600" cy="220" r="65" fill="#281A0F"/>
+  <path d="M 680 200 Q 725 220 680 245" fill="none" stroke="#F7F3EC" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Pires de barro e ramos de alecrim decorativo -->
+  <circle cx="620" cy="450" r="110" fill="#6B7548" opacity="0.85" filter="url(#shadow)"/>
+  <text x="620" y="445" font-family="'Lora', Georgia, serif" font-size="28" font-weight="bold" fill="#FDFBF7" text-anchor="middle">CAFÉ DA MANHÃ</text>
+  <text x="620" y="475" font-family="'Inter', sans-serif" font-size="14" fill="#EDE7DB" text-anchor="middle" font-weight="600">ENERGIA SEM PICOS DE GLICOSE</text>
+</svg>

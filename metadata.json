@@ -1,0 +1,8 @@
+{
+  "name": "100 Roteiros de Aulas de Judô",
+  "description": "Material digital de apoio pedagógico para professores de judô com 100 roteiros de aulas e 2 bônus exclusivos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
