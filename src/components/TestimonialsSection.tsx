@@ -17,7 +17,7 @@ export const TestimonialsSection: React.FC = () => {
           Vidas Transformadas & Glicemia Controlada
         </h2>
         <p className="mt-2 text-sm sm:text-base text-neutral-600 max-w-xl mx-auto leading-relaxed">
-          Veja o que dizem as pessoas que estavam no pré-diabetes ou diabetes e voltaram a comer com prazer e tranquilidade.
+          Resultados reais de quem adotou o cardápio.
         </p>
 
         {/* 3 WhatsApp Chat Cards */}

@@ -10,43 +10,43 @@ interface FaqItem {
 const FAQ_ITEMS: FaqItem[] = [
   {
     id: 'faq-1',
-    question: 'Como e por onde recebo o acesso ao material e app?',
-    answer: 'O acesso completo é enviado imediatamente para o seu e-mail logo após a confirmação do pagamento. Você recebe link direto para usar no celular, tablet ou computador.',
+    question: 'Como recebo o acesso?',
+    answer: 'Imediatamente por e-mail após a confirmação do pagamento.',
   },
   {
     id: 'faq-2',
-    question: 'Serve tanto para pré-diabéticos quanto para diabéticos tipo 1 e tipo 2?',
-    answer: 'Sim! As receitas foram desenvolvidas com base no controle de índice glicêmico e contagem de carboidratos líquidos, sendo perfeitas para manter a glicemia estável em qualquer estágio.',
+    question: 'Serve para pré-diabéticos e diabéticos tipo 2?',
+    answer: 'Sim! Receitas com controle de IG e contagem de carboidratos, ideais para ambos.',
   },
   {
     id: 'faq-3',
-    question: 'Os ingredientes são caros ou difíceis de encontrar?',
-    answer: 'De jeito nenhum. Todas as receitas usam alimentos simples encontrados em qualquer feira livre ou supermercado tradicional brasileiro (ovos, carnes, legumes, verduras, queijos, sementes e grãos acessíveis).',
+    question: 'Os ingredientes são caros?',
+    answer: 'Não. Usamos alimentos simples de feira e supermercado brasileiro.',
   },
   {
     id: 'faq-4',
-    question: 'O acesso tem mensalidade ou é pagamento único?',
-    answer: 'É pagamento único! Sem nenhuma mensalidade, taxa oculta ou renovação. Você paga uma única vez e o acesso é seu para sempre.',
+    question: 'Tem mensalidade?',
+    answer: 'Não. Pagamento único, acesso vitalício.',
   },
   {
     id: 'faq-5',
-    question: 'As receitas mostram a contagem de carboidratos?',
-    answer: 'Sim! Cada receita possui a quantidade detalhada de carboidratos líquidos por porção para você ter total segurança e tranquilidade na sua rotina.',
+    question: 'Mostra a contagem de carboidratos?',
+    answer: 'Sim, cada receita tem carboidratos líquidos por porção.',
   },
   {
     id: 'faq-6',
-    question: 'Consigo acessar pelo celular mesmo sem entender muito de tecnologia?',
-    answer: 'Com certeza. O aplicativo e o material são super intuitivos, com botões grandes, fotos ilustrativas e busca rápida por café, almoço, jantar ou lanche.',
+    question: 'Funciona no celular?',
+    answer: 'Sim, app intuitivo com fotos e busca rápida por refeição.',
   },
   {
     id: 'faq-7',
-    question: 'Posso imprimir as receitas se preferir?',
-    answer: 'Sim! Além de acessar na tela do celular, o material vem formatado para impressão caso você goste de ter as receitas e a lista de compras na geladeira ou na bancada.',
+    question: 'Posso imprimir?',
+    answer: 'Sim, formato pronto para impressão.',
   },
   {
     id: 'faq-8',
-    question: 'E se eu não gostar ou achar difícil?',
-    answer: 'Você conta com a nossa Garantia Incondicional de 7 dias. Basta enviar um e-mail para o suporte e devolvemos 100% do seu valor investido, sem burocracia.',
+    question: 'E se eu não gostar?',
+    answer: 'Garantia de 7 dias. Devolvemos 100% sem burocracia.',
   },
 ];
 
@@ -61,17 +61,11 @@ export const FaqSection: React.FC = () => {
     <section className="py-10 md:py-14 bg-[#FAF9F6] border-t border-neutral-200/80 relative">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        {/* Pill Badge */}
-        <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-emerald-50 text-[#0F392B] border border-emerald-200 uppercase tracking-wider mb-3">
-          <HelpCircle className="w-3.5 h-3.5 text-emerald-600" />
-          <span>OBJEÇÕES & DÚVIDAS</span>
-        </div>
-
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#0F392B] tracking-tight">
           Perguntas Frequentes
         </h2>
 
-        {/* Lista de Acordeão */}
+        {/* Acordeão */}
         <div className="mt-6 space-y-2.5 text-left">
           {FAQ_ITEMS.map((item) => {
             const isOpen = openId === item.id;

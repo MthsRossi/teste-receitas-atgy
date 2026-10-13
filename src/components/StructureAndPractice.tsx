@@ -58,7 +58,7 @@ export const StructureAndPractice: React.FC = () => {
             </h2>
 
             <p className="mt-2 text-sm sm:text-base text-neutral-600 leading-relaxed">
-              Sem termos complicados ou ingredientes caros. Você economiza tempo, dinheiro no mercado e sabe exatamente o impacto de cada alimento no seu corpo.
+              Sem termos complicados nem ingredientes caros. Praticidade real no seu dia a dia.
             </p>
 
             {/* Grid 2 colunas de Pills com Check */}
@@ -76,10 +76,7 @@ export const StructureAndPractice: React.FC = () => {
               ))}
             </div>
 
-            {/* Fechamento */}
-            <p className="mt-4 text-xs sm:text-sm text-neutral-500 italic">
-              “Abra o aplicativo ou consulte o arquivo no celular em qualquer lugar. Fazer compras e cozinhar saudável nunca foi tão fácil.”
-            </p>
+
 
           </div>
 

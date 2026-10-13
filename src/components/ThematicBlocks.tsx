@@ -95,7 +95,7 @@ export const ThematicBlocks: React.FC = () => {
             Tudo o que você precisa em um só lugar
           </h2>
           <p className="mt-2 text-sm sm:text-base text-neutral-600 leading-relaxed text-balance">
-            Explore um acervo de receitas e ferramentas desenvolvidas para facilitar seu dia a dia e manter a saúde sob controle absoluto.
+            Receitas e ferramentas para facilitar sua rotina e controlar a saúde.
           </p>
         </div>
 

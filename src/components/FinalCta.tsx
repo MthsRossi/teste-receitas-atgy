@@ -23,7 +23,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onCtaClick }) => {
           </h2>
 
           <p className="mt-3 text-sm sm:text-base text-emerald-100 max-w-xl mx-auto leading-relaxed">
-            Tenha +150 receitas saborosas, cardápios semanais prontos e contagem exata de carboidratos direto no seu celular para transformar sua saúde hoje.
+            +150 receitas, cardápios prontos e contagem de carboidratos no seu celular.
           </p>
 
           <div className="mt-6 flex flex-col items-center">

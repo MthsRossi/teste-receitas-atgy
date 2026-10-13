@@ -23,7 +23,7 @@ export const WhatYouWillReceive: React.FC = () => {
 
         {/* Subtítulo Descritivo */}
         <p className="mt-2 text-sm sm:text-base text-neutral-600 max-w-2xl mx-auto leading-relaxed text-balance">
-          Receitas planejadas para não elevar a glicose: fotos reais, modo de preparo passo a passo, contagem exata de carboidratos líquidos e tempo de cozinha de 10 a 25 minutos.
+          Fotos reais, passo a passo, contagem de carboidratos e preparo de 10 a 25 minutos.
         </p>
       </div>
 

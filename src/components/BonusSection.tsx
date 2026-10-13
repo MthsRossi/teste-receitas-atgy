@@ -4,71 +4,59 @@ import { IMAGES } from '../images';
 
 interface BonusItem {
   id: string;
-  badge: string;
   image: string;
   alt: string;
   icon: React.ComponentType<{ className?: string }>;
   title: string;
   originalPrice: string;
   description: string;
-  highlight: string;
 }
 
 const BONUSES: BonusItem[] = [
   {
     id: 'bonus-1',
-    badge: 'GRÁTIS HOJE',
     image: IMAGES.bonusGuia,
-    alt: 'Bônus 1 - Lista Inteligente de Compras para Feira e Supermercado',
+    alt: 'Bônus 1 - Lista de Compras Inteligente',
     icon: ShoppingBag,
     title: 'Lista de Compras Inteligente',
     originalPrice: 'R$ 19,90',
-    description: 'Chega de dúvidas no corredor do mercado. Uma lista organizada por setor (hortifrúti, açougue, temperos e grãos) para economizar e levar apenas o que faz bem.',
-    highlight: '*Pronto para levar no celular (WhatsApp) ou imprimir.',
+    description: 'Lista organizada por setor do mercado para economizar e comprar apenas o que faz bem.',
   },
   {
     id: 'bonus-2',
-    badge: 'GRÁTIS HOJE',
     image: IMAGES.bonusFicha,
-    alt: 'Bônus 2 - Guia Rápido de Rótulos & Armadilhas dos Produtos "Diet/Light"',
+    alt: 'Bônus 2 - Guia de Rótulos Diet/Light',
     icon: BookOpen,
-    title: 'Guia Rápido de Rótulos & Armadilhas',
+    title: 'Guia de Rótulos & Armadilhas',
     originalPrice: 'R$ 19,90',
-    description: 'Descubra os nomes ocultos do açúcar nos produtos industriais e aprenda em menos de 1 minuto a identificar se um produto é verdadeiramente seguro.',
-    highlight: '*Evite alimentos falsamente saudáveis que disparam a insulina.',
+    description: 'Identifique nomes ocultos do açúcar e produtos falsamente saudáveis.',
   },
   {
     id: 'bonus-3',
-    badge: 'GRÁTIS HOJE',
     image: IMAGES.bonusDoces,
-    alt: 'Bônus 3 - Guia de Sobremesas & Doces Zero Açúcar que Não Elevam a Glicose',
+    alt: 'Bônus 3 - Sobremesas Zero Açúcar',
     icon: Sparkles,
     title: 'Sobremesas & Doces Sem Culpa',
     originalPrice: 'R$ 29,90',
-    description: 'Mousses, bolos fofinhos, tortas e brigadeiros adaptados com farinhas de baixo índice glicêmico e adoçantes naturais seguros para matar a vontade de doce.',
-    highlight: '*15 receitas exclusivas de doces testadas e aprovadas.',
+    description: '15 receitas de doces com adoçantes naturais e farinhas de baixo IG.',
   },
   {
     id: 'bonus-4',
-    badge: 'GRÁTIS HOJE',
     image: IMAGES.bonusChas,
-    alt: 'Bônus 4 - Manual de Chás & Shots Matinais Hipoglicemiantes',
+    alt: 'Bônus 4 - Manual de Chás Matinais',
     icon: CupSoda,
     title: 'Manual de Chás & Shots Matinais',
     originalPrice: 'R$ 19,90',
-    description: 'Combinações naturais comprovadas (como canela-do-ceilão, pata-de-vaca, gengibre e vinagre de maçã) para auxiliar a sensibilidade à insulina e digestão.',
-    highlight: '*Modo de infusão correto e os melhores horários do dia.',
+    description: 'Combinações naturais para auxiliar a sensibilidade à insulina.',
   },
   {
     id: 'bonus-5',
-    badge: 'GRÁTIS HOJE',
     image: IMAGES.bonusDiario,
-    alt: 'Bônus 5 - Diário de Monitoramento Glicêmico & Sintomas Imprimível',
+    alt: 'Bônus 5 - Diário Glicêmico Imprimível',
     icon: ClipboardList,
     title: 'Diário de Controle Glicêmico',
     originalPrice: 'R$ 14,90',
-    description: 'Ficha prática para registrar suas medições em jejum e pós-prandiais, relacionando diretamente o que comeu com sua estabilidade glicêmica ao longo das semanas.',
-    highlight: '*Excelente para levar pronto na sua próxima consulta médica.',
+    description: 'Ficha para registrar medições e levar pronta na consulta médica.',
   },
 ];
 
@@ -84,68 +72,53 @@ export const BonusSection: React.FC = () => {
         </div>
 
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#0F392B] tracking-tight">
-          5 Bônus Gratuitos Inclusos no Plano Completo
+          5 Bônus Gratuitos Inclusos
         </h2>
-        <p className="mt-2 text-sm sm:text-base text-neutral-600 max-w-xl mx-auto leading-relaxed">
-          Garantindo seu acesso hoje, você libera 5 materiais complementares de alto valor (avaliados em mais de R$ 100) sem pagar nenhum centavo a mais.
-        </p>
 
-        {/* Grade de Cards dos Bônus (1ª linha com 3 cards, 2ª linha com 2 cards centralizados) */}
+        {/* Grid de Cards */}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {BONUSES.map((bonus) => {
             const Icon = bonus.icon;
             return (
               <div
                 key={bonus.id}
-                className="bg-white border border-neutral-200/90 rounded-3xl p-5 shadow-xs hover:shadow-md transition-all flex flex-col justify-between text-left relative overflow-hidden group"
+                className="bg-white border border-neutral-200/90 rounded-3xl overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col text-left relative group"
               >
-                {/* Selo Verde Superior */}
+                {/* Selo */}
                 <div className="absolute top-3.5 right-3.5 z-10">
                   <span className="bg-[#16a34a] text-white text-[10px] font-black tracking-wider uppercase px-2.5 py-0.5 rounded-full shadow-md">
-                    {bonus.badge}
+                    GRÁTIS
                   </span>
                 </div>
 
-                <div>
-                  {/* Foto do Mockup */}
-                  <div className="w-full aspect-video rounded-2xl overflow-hidden border border-neutral-100 bg-[#F8FAFC] mb-4 flex items-center justify-center shadow-2xs">
-                    <img
-                      src={bonus.image}
-                      alt={bonus.alt}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
-                  </div>
+                {/* Imagem completa sem corte */}
+                <div className="w-full bg-[#F8FAFC] border-b border-neutral-100 flex items-center justify-center p-3">
+                  <img
+                    src={bonus.image}
+                    alt={bonus.alt}
+                    className="w-full h-auto max-h-56 object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
 
+                <div className="p-4 flex flex-col flex-1">
                   {/* Título com ícone */}
                   <div className="flex items-center gap-2 mb-1">
                     <Icon className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <h3 className="text-base font-black text-neutral-900 line-clamp-1">
+                    <h3 className="text-sm font-black text-neutral-900 line-clamp-1">
                       {bonus.title}
                     </h3>
                   </div>
 
                   {/* Preço riscado */}
-                  <div className="mb-1.5">
-                    <span className="text-xs text-neutral-400 font-bold line-through">
-                      {bonus.originalPrice}
-                    </span>
-                  </div>
+                  <span className="text-xs text-neutral-400 font-bold line-through mb-1.5">
+                    {bonus.originalPrice}
+                  </span>
 
-                  {/* Descrição */}
+                  {/* Descrição curta */}
                   <p className="text-xs text-neutral-600 leading-relaxed">
                     {bonus.description}
                   </p>
-
-                  <p className="mt-2 text-[11px] text-neutral-400 italic">
-                    {bonus.highlight}
-                  </p>
-                </div>
-
-                <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#0F392B]">
-                    Incluso sem custo adicional.
-                  </span>
                 </div>
               </div>
             );

@@ -115,7 +115,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({
                 <span className="text-xs font-bold text-emerald-600">+150 Receitas + 5 Bônus</span>
               </div>
               <p className="text-xs text-neutral-500 mt-0.5">
-                Acesso completo com aplicativo, cardápios semanais, lista de compras e 5 bônus.
+                Tudo incluso: app, cardápios, lista de compras e 5 bônus.
               </p>
 
               <div className="mt-3 pb-3 border-b border-neutral-100">

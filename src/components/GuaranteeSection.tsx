@@ -25,7 +25,7 @@ export const GuaranteeSection: React.FC = () => {
               7 Dias de Garantia Incondicional
             </h3>
             <p className="mt-1.5 text-xs sm:text-sm text-neutral-700 leading-relaxed">
-              Experimente as receitas, faça os cardápios na sua rotina e meça seus resultados. Se por qualquer razão você não amar os pratos ou achar que não serviu para você, devolvemos 100% do seu dinheiro com apenas um e-mail.
+              Se não gostar, devolvemos 100% do seu dinheiro com um e-mail. Sem burocracia.
             </p>
           </div>
 

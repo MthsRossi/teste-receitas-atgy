@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
 
         {/* Aviso de saúde responsável */}
         <p className="text-[10px] text-neutral-400 max-w-2xl mx-auto pt-2">
-          Aviso: Este material é um guia educativo e prático de receitas e alimentação saudável. Ele não substitui o acompanhamento médico ou nutricional individualizado nem orienta a interrupção de medicamentos.
+          Este material é educativo e não substitui acompanhamento médico ou nutricional.
         </p>
 
         {/* Direitos autorais */}
